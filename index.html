@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <style>
+        /* Kaydırma çubuklarını ve boşlukları sıfırlar */
+        body, html { 
+            margin: 0; 
+            padding: 0; 
+            width: 100%; 
+            height: 100%; 
+            overflow: hidden; 
+            background-color: #1a1a1a; /* Uygulamanın koyu temasına uyum sağlar */
+        }
+        .ad-container {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+        }
+        img {
+            width: 100%;
+            height: 100px; /* Python'daki setFixedHeight ile aynı */
+            object-fit: contain; /* Resmi bozmadan (basıklaştırmadan) sığdırır */
+        }
+    </style>
+</head>
+<body>
+    <div class="ad-container" onclick="window.open('https://github.com/Emre37destan', '_blank')">
+        <img src="banner.png" onerror="this.src='https://via.placeholder.com/728x90/1a1a1a/ff5555?text=APK-MASTER+SUPPORT'">
+    </div>
+</body>
+</html>
