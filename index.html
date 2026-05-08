@@ -3,14 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <style>
-        /* Kaydırma çubuklarını ve boşlukları sıfırlar */
         body, html { 
             margin: 0; 
             padding: 0; 
             width: 100%; 
             height: 100%; 
             overflow: hidden; 
-            background-color: #1a1a1a; /* Uygulamanın koyu temasına uyum sağlar */
+            /* Arka planı resmin en koyu rengiyle aynı yapalım ki geçiş belli olmasın */
+            background-color: #1a1a1a; 
         }
         .ad-container {
             width: 100%;
@@ -21,15 +21,18 @@
             cursor: pointer;
         }
         img {
+            /* Burası kritik: Resmi yamultmadan tüm genişliğe yayar,  */
+            /* gerekirse üstten/alttan çok az kırpar ama boşluk bırakmaz */
             width: 100%;
-            height: 100px; /* Python'daki setFixedHeight ile aynı */
-            object-fit: contain; /* Resmi bozmadan (basıklaştırmadan) sığdırır */
+            height: 100%;
+            object-fit: cover; 
+            display: block; /* Alt kısımdaki boşlukları siler */
         }
     </style>
 </head>
 <body>
-    <div class="ad-container" onclick="window.open('https://github.com/Emre37destan', '_blank')">
-        <img src="banner.png" onerror="this.src='https://via.placeholder.com/728x90/1a1a1a/ff5555?text=APK-MASTER+SUPPORT'">
+    <div class="ad-container" onclick="window.open('https://github.com/Emre37destan/ApkAds', '_blank')">
+        <img src="banner.png" alt="APK-MASTER 2026 PRO">
     </div>
 </body>
 </html>
