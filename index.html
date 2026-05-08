@@ -3,25 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; } /* Her şeyi sıfırlar */
+
         body, html { 
-            margin: 0; 
-            padding: 0; 
             width: 100%; 
             height: 100%; 
             overflow: hidden; 
             background-color: #0e1111; 
         }
+
         .ad-container {
-            width: 100vw; /* Ekranın tam genişliği */
-            height: 100vh;
+            width: 100%;
+            height: 100%;
             display: flex;
             align-items: center;
             justify-content: center;
         }
+
         img {
-            width: 100%; /* Resmi genişliğe yayar */
-            height: 100%; /* Resmi yüksekliğe yayar */
-            object-fit: cover; /* Resmi yamultmadan alanı doldurur, kenarları hafif kırpar */
+            width: 100%;
+            height: 100%;
+            object-fit: cover; /* Boşluk kalmaması için hafifçe büyütüp alanı doldurur */
         }
     </style>
 </head>
