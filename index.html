@@ -12,16 +12,16 @@
             background-color: #0e1111; 
         }
         .ad-container {
-            width: 100vw; /* Viewport width: Ekran genişliğinin tamamı */
+            width: 100vw; /* Ekranın tam genişliği */
             height: 100vh;
             display: flex;
             align-items: center;
             justify-content: center;
         }
         img {
-            width: 100%; /* Resmi yana doğru yayar */
-            height: 100px;
-            object-fit: cover; /* Yanlardaki boşluğu kapatmak için resmi esnetir/kırpar */
+            width: 100%; /* Resmi genişliğe yayar */
+            height: 100%; /* Resmi yüksekliğe yayar */
+            object-fit: cover; /* Resmi yamultmadan alanı doldurur, kenarları hafif kırpar */
         }
     </style>
 </head>
